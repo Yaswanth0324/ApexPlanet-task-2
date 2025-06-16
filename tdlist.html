@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TASK-2</title>
+  <link rel="stylesheet" href="tdlist.css" />
+</head>
+<body>
+  <header>
+    <h1>TASK-2</h1>
+  </header>
+
+  <main class="grid-container">
+    <!-- Contact Form -->
+    <section class="form-section">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+         <input type="tel" id="phone" placeholder="Your Phone Number" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Enter a task" />
+      <button onclick="addTodo()">Add Task</button>
+      <ul id="todoList"></ul>
+    </section>
+
+    <!-- Image Gallery -->
+<section class="gallery-section">
+  <h2>Image Gallery</h2>
+  <input type="file" id="imageInput" accept="image/*" style="display: none;" />
+  <button onclick="document.getElementById('imageInput').click()">Add Image</button>
+  <div id="gallery" class="gallery-grid"></div>
+</section>
+
+  </main>
+
+
+
+  <script src="tdlist.js"></script>
+</body>
+</html>
